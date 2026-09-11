@@ -1,4 +1,4 @@
-# 📷 Kavro API Suite
+# 📷 FW API Suite
 
 > **UAT API Test Framework for the KAVRO Camera Device (NB166 CameraPod)**  
 > Built with Python + Pytest | REST API Automation | Designed for UAT Standards
