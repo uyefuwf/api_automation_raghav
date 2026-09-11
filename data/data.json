@@ -1,0 +1,315 @@
+{
+  "get_info": {
+    "deviceType": "CameraPod",
+    "model": "NB166",
+    "firmwareVersion": "3.141.6",
+    "serialNumber": "123456789",
+    "macAddress": "02:00:06:12:12:14",
+    "ipv6_address_scope_link": "fe80::6ff:fe12:1214",
+    "ipv4_address": "192.168.1.2",
+    "dhcp_mode": "DHCP"
+  },
+  "get_status": {
+    "uptimeSeconds": 100581,
+    "cpuLoad": 1.6000000238418579,
+    "memoryUsedBytes": 651968512,
+    "temperatureC": 41
+  },
+  "pwd_change": {
+    "newPassword": "Econsys@12345"
+  },
+  "add_usr": [
+    {
+      "username": "raghav",
+      "password": "Raghavecon@12345",
+      "permissions": {
+        "camera_control": false,
+        "camera_network": true,
+        "log_access": true
+      }
+    },
+    {
+      "username": "test1",
+      "password": "Test@1234567",
+      "permissions": {
+        "camera_control": true,
+        "camera_network": false,
+        "log_access": false
+      }
+    },
+    {
+      "username": "mano",
+      "password": "Econsys@12345",
+      "permissions": {
+        "camera_control": true,
+        "camera_network": false,
+        "log_access": true
+      }
+    }
+  ],
+  "http_mode": [
+    {
+      "httpEnabled": false,
+      "httpsEnabled": true
+    },
+    {
+      "httpEnabled": true,
+      "httpsEnabled": true
+    }
+  ],
+  "network_ipv4": [
+          {
+"enabled": true,
+"dhcpEnabled": true,
+"address": "192.168.1.4",
+"netmask": "255.255.255.0",
+"gateway": "192.168.88.1",
+"dns": [
+"192.168.88.1",
+"192.168.88.1"
+]
+},
+    {
+"enabled": true,
+"dhcpEnabled": false,
+"address": "192.168.1.69",
+"netmask": "255.255.255.0",
+"gateway": "192.168.1.69",
+"dns": [
+"8.8.8.8",
+"6.6.6.6"
+]
+}
+    ],
+  "onvif_mode":[
+          {
+"enabled": true
+},
+    {
+"enabled": false
+}],
+  "rtsp_mode":
+          [
+            {
+"mode": "rtsps"
+},
+            {
+"mode": "rtsp"
+}
+          ],
+  "delete_usr": [
+    {
+      "username": "test"
+    },
+    {
+      "username": "test1"
+    }
+  ],
+  "system_control": {
+    "factory_reset": {},
+    "reboot": {}
+  },
+  "rtp_sessions": {
+    "expected_sessions": [
+      {
+        "id": 0,
+        "enabled": true,
+        "clientIp": "192.168.1.2",
+        "protocol": "rtsp"
+      },
+      {
+        "id": 1,
+        "enabled": true,
+        "clientIp": "192.168.1.4",
+        "protocol": "rtsps"
+      }
+    ],
+    "terminate_id": 0
+  },
+  "webui_mode": [
+    {
+      "enabled": true
+    },
+    {
+      "enabled": false
+    }
+  ],
+  "rstp_config": [
+    {
+      "enabled": true
+    },
+    {
+      "enabled": false
+    }
+  ],
+  "system_time": {
+    "epochSecondsUTC": 1780930019,
+    "timeZoneOffset": "+5:30",
+    "localTimeString": "06/08/2026 08:16:59 PM"
+  },
+  "time_settings": [
+    {
+      "source": "manual",
+      "ntpServers": [
+        "192.168.88.180"
+      ],
+      "timeZoneOffset": "+5:30",
+      "useDST": false,
+      "dateFormat": "MM/DD/YYYY",
+      "hourFormat": "12h"
+    },
+    {
+      "source": "ntp_manual",
+      "ntpServers": [
+        "192.168.88.135"
+      ],
+      "timeZoneOffset": "+5:30",
+      "useDST": false,
+      "dateFormat": "MM/DD/YYYY",
+      "hourFormat": "24h"
+    }
+  ],
+  "certificates": {
+    "generate": {},
+    "expected_type": "application/x-pem-file"
+  },
+  "video_common": [
+    {
+      "frameRateFps": 30
+    },
+    {
+      "frameRateFps": 25
+    }
+  ],
+  "video_streams": {
+    "stream_list": [
+      {
+        "id": 0,
+        "enabled": true,
+        "label": "stream0"
+      },
+      {
+        "id": 1,
+        "enabled": false,
+        "label": "stream1"
+      },
+      {
+        "id": 2,
+        "enabled": true,
+        "label": "stream2"
+      },
+      {
+        "id": 3,
+        "enabled": true,
+        "label": "stream3"
+      }
+    ],
+    "specific_stream": {
+      "id": 0,
+      "payload": {
+        "enabled": true,
+        "encoder": {
+          "codec": "h264",
+          "resolution": "1280x720",
+          "bitrateMode": "CBR",
+          "bitrateKbps": 1000,
+          "quality": 100,
+          "iFrameInterval": 30
+        }
+      },
+      "update_payload": {
+        "enabled": true,
+        "encoder": {
+          "codec": "h265",
+          "resolution": "2592x1944",
+          "bitrateMode": "CBR",
+          "bitrateKbps": 2000,
+          "quality": 100,
+          "iFrameInterval": 30
+        }
+      }
+    }
+  },
+  "image_settings": {
+    "brightness": 50,
+    "contrast": 50,
+    "saturation": 50,
+    "sharpness": 100,
+    "horizontalFlip": 0,
+    "verticalFlip": 0,
+    "whiteBalanceMode": 2,
+    "manualWhiteBalance": 5000,
+    "manualGain": 0,
+    "dayNightMode": "day",
+    "wdr": 0,
+    "dayNightThreshold": 50
+  },
+  "roi_exposure": [
+    {
+      "xStart": 50,
+      "yStart": 50,
+      "width": 50,
+      "height": 50
+    },
+    {
+      "xStart": 0,
+      "yStart": 0,
+      "width": 100,
+      "height": 100
+    }
+  ],
+  "overlay_settings": [
+    {
+      "timestampEnabled": true,
+      "position": "bottom-right"
+    },
+    {
+      "timestampEnabled": true,
+      "position": "bottom-left"
+    }
+  ],
+  "motion_config": {
+    "config": {
+      "enabled": true,
+      "sensitivity": 45,
+      "motionOnDelay": 1,
+      "motionOffDelay": 1,
+      "motionObjectSize": 5,
+      "maskData": [
+        "0x01",
+        "0x01",
+        "0x01",
+        "0x01"
+      ]
+    },
+    "expected_status": {
+      "motion": true,
+      "motionTransitionId": 0
+    }
+  },
+  "video_clips": {
+    "generate": {
+      "stream_id": 0,
+      "payload": {
+        "timestampUTC": 1710000000,
+        "durationSeconds": 15
+      }
+    },
+    "clip_id": "s3_1781163978_1781163992"
+  },
+  "sd_card": {
+    "expected_status": "mounted",
+    "expected_usage": {
+      "usedBytes": 16114515968,
+      "freeBytes": 14209253376,
+      "totalBytes": 30323769344
+    }
+  },
+  "firmware": {
+    "version": "3.141.6",
+    "update_status": {
+      "status": "success",
+      "lastFirmwareVersion": "1.141.6"
+    }
+  }
+}
